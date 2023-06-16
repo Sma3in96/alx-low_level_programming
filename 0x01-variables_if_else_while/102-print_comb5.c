@@ -22,6 +22,11 @@ int main(void)
 
 				while ( d < 58)
 				{
+					if ((a == c) && (b == d))
+					{
+						d++;
+						continue;
+					}
 					putchar(32);
 					putchar(a);
 					putchar(b);
