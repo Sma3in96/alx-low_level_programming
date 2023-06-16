@@ -8,19 +8,19 @@ int main(void)
 {
 	int a = 48;
 
-	while ( a < 58 )
+	while (a < 58)
 	{
 		int b =  a;
 
-		while ( b < 58 )
+		while (b < 58)
 		{
 			int c = 48;
 
-			while ( c < 58 )
+			while (c < 58)
 			{
 				int d = 48;
 
-				while ( d < 58)
+				while (d < 58)
 				{
 					if ((a == c) && (b == d))
 					{
