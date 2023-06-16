@@ -14,11 +14,11 @@ int main(void)
 
 		while (b < 58)
 		{
-			int c = 48;
+			int c = a;
 
 			while (c < 58)
 			{
-				int d = b + 1;
+				int d = b;
 
 				while (d < 58)
 				{
