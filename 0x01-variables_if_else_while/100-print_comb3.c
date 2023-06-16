@@ -10,7 +10,7 @@ int main(void)
 
 	while (a < 58)
 	{
-		int b = ++a;
+		int b = a + 1;
 
 		while (b < 58)
 		{
@@ -23,6 +23,7 @@ int main(void)
 			}
 			b++;
 		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
