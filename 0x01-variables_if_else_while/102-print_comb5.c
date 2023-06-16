@@ -18,15 +18,10 @@ int main(void)
 
 			while (c < 58)
 			{
-				int d = 48;
+				int d = b + 1;
 
 				while (d < 58)
 				{
-					if ((a == c) && (b == d))
-					{
-						d++;
-						continue;
-					}
 					if ((a != 57) || (b != 56))
 					{
 						putchar(a);
