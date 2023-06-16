@@ -17,6 +17,7 @@ int main(void)
 	while (a < 91)
 	{
 		putchar(a);
+		a++;
 	}
 	putchar('\n');
 	return (0);
