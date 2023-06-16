@@ -24,11 +24,11 @@ int main(void)
 					d = b + 1;
 				while (d < 58)
 				{
-						putchar(a);
-						putchar(b);
-						putchar(32);
-						putchar(c);
-						putchar(d);
+					putchar(a);
+					putchar(b);
+					putchar(32);
+					putchar(c);
+					putchar(d);
 					if ((a != 57) || (b != 56))
 					{
 						putchar(44);
