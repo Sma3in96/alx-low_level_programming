@@ -27,13 +27,16 @@ int main(void)
 						d++;
 						continue;
 					}
-					putchar(32);
-					putchar(a);
-					putchar(b);
-					putchar(32);
-					putchar(c);
-					putchar(d);
-					putchar(44);
+					if ((a != 57) || (b != 56))
+					{
+						putchar(a);
+						putchar(b);
+						putchar(32);
+						putchar(c);
+						putchar(d);
+						putchar(44);
+						putchar(32);
+					}
 				d++;
 				}
 			c++;
