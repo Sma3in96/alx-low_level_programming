@@ -14,11 +14,11 @@ int main(void)
 
 		while (b < 58)
 		{
-			int c = a;
+			int c = a++;
 
 			while (c < 58)
 			{
-				int d = b;
+				int d = ++b;
 
 				while (d < 58)
 				{
@@ -36,9 +36,7 @@ int main(void)
 				}
 			c++;
 			}
-		b++;
 		}
-	a++;
 	}
 	putchar('\n');
 	return (0);
