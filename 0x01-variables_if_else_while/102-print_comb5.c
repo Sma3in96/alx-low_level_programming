@@ -21,7 +21,7 @@ int main(void)
 				int d = 48;
 
 				if (a == c)
-					d = b+1;
+					d = b + 1;
 				while (d < 58)
 				{
 						putchar(a);
