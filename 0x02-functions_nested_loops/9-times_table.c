@@ -12,6 +12,11 @@ void times_table(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
+			if (j == 0)
+			{
+				_putchar(48);
+				continue;
+			}
 			if ((i * j) < 10)	
 			{
 				_putchar(48 + (i * j));
