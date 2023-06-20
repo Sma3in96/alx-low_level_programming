@@ -6,15 +6,16 @@
  */
 int main(void)
 {
-	int i, sum;
-	int d1 = 1;
-	int d2 = 2;
+	int i;
+	long int sum;
+	long int d1 = 1;
+	long int d2 = 2;
 
-	printf("%d, %d", d1, d2);
+	printf("%ld, %ld", d1, d2);
 	for (i = 0; i < 50; i++)
 	{
 		sum = d1 + d2;
-		printf(", %d", sum);
+		printf(", %ld", sum);
 		d1 = d2;
 		d2 = sum;
 	}
