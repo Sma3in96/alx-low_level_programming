@@ -21,7 +21,7 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(48 + (((i * j) % 100) - ((i * j) % 10)));
+				_putchar(48 + (((i * j) - ((i * j) % 10)) / 10));
 				_putchar(48 + ((i * j) % 10));
 				_putchar(44);
 				_putchar(32);
