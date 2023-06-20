@@ -12,7 +12,7 @@ int main(void)
 	long int d2 = 2;
 
 	printf("%ld, %ld", d1, d2);
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 48; i++)
 	{
 		sum = d1 + d2;
 		printf(", %ld", sum);
