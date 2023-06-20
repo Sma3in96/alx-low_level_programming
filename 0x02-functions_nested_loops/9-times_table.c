@@ -19,18 +19,17 @@ void times_table(void)
 			}
 			if ((i * j) < 10)	
 			{
-				_putchar(48 + (i * j));
 				_putchar(44);
 				_putchar(32);
 				_putchar(32);
+				_putchar(48 + (i * j));
 			}
 			else
 			{
-				_putchar(48 + (((i * j) - ((i * j) % 10)) / 10));
-				_putchar(48 + ((i * j) % 10));
 				_putchar(44);
 				_putchar(32);
-
+				_putchar(48 + (((i * j) - ((i * j) % 10)) / 10));
+				_putchar(48 + ((i * j) % 10));
 			}
 		}
 		_putchar('\n');
