@@ -18,6 +18,6 @@ int main(void)
 		d1 = d2;
 		d2 = sum;
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
