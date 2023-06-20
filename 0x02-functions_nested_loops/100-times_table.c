@@ -20,13 +20,13 @@ void print_times_table(int n)
 				x = i * j;
 				_putchar(44);
 				_putchar(32);
-				if ( x <= 9 )
+				if (x <= 9)
 				{
 					_putchar(32);
 					_putchar(32);
 					_putchar(48 + x);
 				}
-				else if
+				else if (x < 100)
 				{
 					_putchar(32);
 					_putchar(48 + (x / 10));
