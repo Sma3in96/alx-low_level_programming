@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - checks for lowercaces
+ * @c: the code ascii of the letter we want to check
  *
  * Return: 1 if true 0 if false
  */
