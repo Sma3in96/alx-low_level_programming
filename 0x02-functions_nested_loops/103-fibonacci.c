@@ -15,7 +15,7 @@ int main(void)
 	{
 		new = d1 + d2;
 		if (new % 2 == 0)
-			sum += new; 
+			sum += new;
 		d1 = d2;
 		d2 = new;
 	}
