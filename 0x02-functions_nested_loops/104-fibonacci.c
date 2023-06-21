@@ -6,13 +6,11 @@
  */
 int main(void)
 {
-	int i, flag1, flag2;
+	int i, flag1, flag2 = 0, 1, 1;
 	long int sum, d11, d22, sum2;
 	long int d1 = 1;
 	long int d2 = 2;
 
-	flag1 = 1;
-	flag2 = 1;
 	printf("%ld, %ld", d1, d2);
 	for (i = 0; i < 96; i++)
 	{
