@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i, flag1, flag2 = 0, 1, 1;
+	int i = 0, flag1 = 1, flag2 = 1;
 	long int sum, d11, d22, sum2;
 	long int d1 = 1;
 	long int d2 = 2;
