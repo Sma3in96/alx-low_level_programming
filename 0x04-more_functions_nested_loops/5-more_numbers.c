@@ -9,7 +9,7 @@
 void more_numbers(void)
 {
 	int i;
-	int j = 0; 
+	int j = 0;
 	int k;
 
 	for (k = 0; k < 10; k++)
@@ -24,6 +24,7 @@ void more_numbers(void)
 			if (i == 9)
 				j = 1;
 		}
-	_putchar('\n');
+		j = 0;
+		_putchar('\n');
 	}
 }
