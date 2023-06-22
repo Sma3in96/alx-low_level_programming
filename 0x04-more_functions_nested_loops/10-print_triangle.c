@@ -10,6 +10,7 @@ void print_triangle(int size)
 	int i;
 	int j = 0;
 	int k = 0;
+	int n = size;
 
 	if (size > 0)
 	{
