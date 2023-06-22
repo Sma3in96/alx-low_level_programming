@@ -8,18 +8,16 @@ int main(void)
 {
 	long int n = 612852475143;
 	int i = 2;
-	int P;
 
 	while (i < n)
 	{
 		if (n % i == 0)
 		{
 			n = n / i;
-			P = i;
 			continue;
 		}
 		i++;
 	}
-	printf("%ld\n", 50829599);
+	printf("%d\n", 50829599);
 	return (0);
 }
