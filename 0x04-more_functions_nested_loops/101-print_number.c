@@ -9,7 +9,6 @@ void print_number(int n)
 {
 	unsigned int i, j, exp;
 
-	j = i;
 	exp = 1;
 	if (n < 0)
 	{
@@ -20,6 +19,7 @@ void print_number(int n)
 	{
 		i = n;
 	}
+	j = i;
 	while (j > 9)
 	{
 		exp = exp * 10;
