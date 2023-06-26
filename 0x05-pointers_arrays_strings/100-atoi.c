@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int locksign = 1;
 	int lockchar = 0;
-	int res = 0;
+	unsigned int res = 0;
 
 	while (*(s + i))
 	{
