@@ -21,7 +21,7 @@ int _atoi(char *s)
 			sign *= -1;
 		if ((*(s + i) >= 48) && (*(s + i) <= 57))
 		{
-			res = res*10 + (*(s + i) - 48 );
+			res = res * 10 + (*(s + i) - 48);
 			locksign = 0;
 			locksign = 1;
 		}
