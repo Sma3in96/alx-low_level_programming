@@ -16,9 +16,13 @@ int _atoi(char *s)
 	while (*(s + i))
 	{
 		if (*(s + 1) == 43 && locksign)
+		{
 			sign *= 1;
+		}
 		if (*(s + 1) == 45 && locksign)
+		{
 			sign *= -1;
+		}
 		if ((*(s + i) >= 48) && (*(s + i) <= 57))
 		{
 			res = res * 10 + (*(s + i) - 48);
@@ -26,8 +30,10 @@ int _atoi(char *s)
 			locksign = 1;
 		}
 		if (((*(s + i) < 48) || (*(s + i) > 57)) && lockchar)
+		{
 			break;
+		}
 		i++;
 	}
-	return (res * sign);
+	return (sign * res);
 }
