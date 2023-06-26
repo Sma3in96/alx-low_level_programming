@@ -27,11 +27,12 @@ int _atoi(char *s)
 		{
 			res = res * 10 + (*(s + i) - 48);
 			locksign = 0;
-			locksign = 1;
+			lockchar = 1;
 		}
-		if (((*(s + i) < 48) || (*(s + i) > 57)) && lockchar == 1)
+		else
 		{
-			break;
+			if (lockchar)
+				break;
 		}
 		i++;
 	}
