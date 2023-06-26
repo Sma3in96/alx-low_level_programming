@@ -15,11 +15,11 @@ int _atoi(char *s)
 
 	while (*(s + i))
 	{
-		if (*(s + 1) == 43 && locksign == 1)
+		if (*(s + i) == 43 && locksign == 1)
 		{
 			sign *= 1;
 		}
-		if (*(s + 1) == 45 && locksign == 1)
+		if (*(s + i) == 45 && locksign == 1)
 		{
 			sign *= -1;
 		}
