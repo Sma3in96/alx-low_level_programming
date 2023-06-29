@@ -18,11 +18,11 @@ char *cap_string(char *s)
 		}
 		if (*(s + i) == 32 || *(s + i) == 9 || *(s + i) == 10 || *(s + i) == 44)
 			newword = 1;
-		if (*(s + i) == 46 || *(s + i) == 33 || *(s + i) == 63 || *(s + i) == 34)
+		else if (*s + i) == 46 || *(s + i) == 33 || *(s + i) == 63 || *(s + i) == 34)
 			newword = 1;
-		if (*(s + i) == 41 || *(s + i) == 123 || *(s + i) == 125 || *(s + i) == 40)
+		else if (*(s + i) == 41 || *(s + i) == 123 || *(s + i) == 125 || *(s + i) == 40)
 			newword = 1;
-		if (*(s + i) == 59)
+		else if (*(s + i) == 59)
 			newword = 1;
 		i++;
 	}
