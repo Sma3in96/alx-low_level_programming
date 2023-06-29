@@ -12,6 +12,7 @@ char *cap_string(char *s)
 
 	if (*(s + i) <= 'z' && *(s + i) >= 'a')
 		*(s + 1 + i) = *(s + 1 + i) - 32;
+	i = 1;
 	while (*(s + i))
 	{
 		for (j = 0; j <= 12; j++)
