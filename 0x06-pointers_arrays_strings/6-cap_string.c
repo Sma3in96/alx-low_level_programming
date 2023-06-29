@@ -22,7 +22,7 @@ char *cap_string(char *s)
 				if (*(s + 1 + i) <= 'z' && *(s + 1 + i) >= 'a')
 				{
 					*(s + 1 + i) = *(s + 1 + i) - 32;
-					break;	 
+					break;
 				}
 			}
 		}
