@@ -17,7 +17,7 @@ char *cap_string(char *s)
 	{
 		for (j = 0; j <= 12; j++)
 		{
-			if nwword[j] == *(s + i)
+			if (*(s + i) == nwword[j])
 			{
 				if (*(s + 1 + i) <= 'z' && *(s + 1 + i) >= 'a')
 				{
