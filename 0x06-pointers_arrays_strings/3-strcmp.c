@@ -8,31 +8,15 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-    int i = 0;
-    int j = 0;
-    int n = 0;
-    int k;
+	int i = 0;
+	int j = 0;
 
-	while (*(s1 + i))
+	while (j == 0)
 	{
-	i++;
+		if (!*(s1 + i) && !*(s2 + i))
+			break;
+		j = *(s1 + i) - *(s2 + i);
+		i++;
 	}
-	while (*(s2 + j))
-	{
-	j++;
-	}
-	n = i >= j ? i : j;
-	for (k = 0; k < n ; k++ )
-	{
-		if ( *(s1 + k) < *(s2 + k) )
-		{
-			return -15;
-		}
-		if ( *(s1 + k) > *(s2 + k) )
-		{
-			return +15;
-		}
-		if (k == n - 1)
-			return 0;
-	}
+	return (j);
 }
