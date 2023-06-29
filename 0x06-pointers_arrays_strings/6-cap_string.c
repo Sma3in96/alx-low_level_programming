@@ -14,6 +14,7 @@ char *cap_string(char *s)
 		if (*(s + i) >= 'a' && *(s + i) <= 'z' && newword == 1)
 		{
 			*(s + i) = *(s + i) - 32;
+			newword = 0;
 		}
 		if (*(s + i) == 32 || *(s + i) == 9 || *(s + i) == 10 || *(s + i) == 44)
 			newword = 1;
@@ -23,6 +24,7 @@ char *cap_string(char *s)
 			newword = 1;
 		if (*(s + i) == 59)
 			newword = 1;
+		i++;
 	}
 	return (s);
 }
