@@ -20,7 +20,7 @@ char *leet(char *s)
 			{
 				*(s + i) = subs[j];
 				break;
-			}		
+			}
 		}
 		i++;
 	}
