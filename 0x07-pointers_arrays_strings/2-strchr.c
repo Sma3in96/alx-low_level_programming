@@ -11,6 +11,8 @@ char *_strchr(char *s, char c)
 {
 	int found = 0;
 
+	if (!(*s))
+		s = NULL;
 	while (*s != '\0')
 	{
 		if (*s == c)
