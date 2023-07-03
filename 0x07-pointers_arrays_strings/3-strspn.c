@@ -8,10 +8,11 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, sum = 0;
+	unsigned int i, sum = 0, old_sum = 0;
 
 	while (*s != '\0')
 	{
+		old_sum = sum
 		for (i = 0; *(accept + i) != '\0'; i++)
 		{
 			if (*s == *(accept + i))
@@ -20,9 +21,9 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
+		if (old_sum == sum)
+			break;
 		s++;
 	}
-	if ((*s == '\0') && (*(accept + i) == '\0'))
-		sum++;
 	return (sum);
 }
