@@ -6,7 +6,7 @@
  *
  * Return: pointer to char place
  */
-char *_str(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 	int found = 0;
@@ -20,7 +20,6 @@ char *_str(char *s, char c)
 		}
 		s++;
 	}
-	s--;
 	if (found == 0)
 		s = NULL;
 	return (s);
