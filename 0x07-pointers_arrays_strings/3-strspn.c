@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s != '\0')
 	{
-		old_sum = sum
+		old_sum = sum;
 		for (i = 0; *(accept + i) != '\0'; i++)
 		{
 			if (*s == *(accept + i))
