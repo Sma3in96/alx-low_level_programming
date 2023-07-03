@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 /**
  * print_diagsums - sum of diags
  * @a: array
@@ -9,7 +9,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	unsigned int i, j, sumd1 = 0, sumd2 = 0;
+	int i, j, sumd1 = 0, sumd2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
@@ -17,13 +17,13 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				sumd1 += a[i][j];
+				sumd1 += *a[i][j];
 			}
 			if (i + j == size - 1)
 			{
-				sumd2 += a[i][j];
+				sumd2 += *a[i][j];
 			}
 		}
 	}
-	printf("%d,%d\n",sumd1 ,sumd2);
+	printf("%d, %d\n",sumd1 ,sumd2);
 }
