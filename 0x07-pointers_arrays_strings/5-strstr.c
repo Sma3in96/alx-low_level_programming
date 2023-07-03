@@ -10,20 +10,20 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i, j, notfound;
 
-	for (i = 0; *(hayslack + i) != '\0'; i++)
+	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
-		if (*(hayslack + i) == *needle)
+		if (*(haystack + i) == *needle)
 		{
 			for (j = 1;  *(needle + j) != '\0'; j++)
 			{
-				if (*(needle + j) != *(hayslack + i + j))
+				if (*(needle + j) != *(haystack + i + j))
 				{
 					notfound = 1;
 					break;
 				}
 			}
-			if (not found == 0)
-				return (hayslack + i);
+			if (notfound == 0)
+				return (haystack + i);
 		}
 	}
 	return ('\0');
