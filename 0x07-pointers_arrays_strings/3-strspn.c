@@ -22,5 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s++;
 	}
+	if (*s == *(accept + i))
+		sum++;
 	return (sum);
 }
