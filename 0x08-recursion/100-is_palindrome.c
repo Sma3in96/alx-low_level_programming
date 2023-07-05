@@ -14,15 +14,17 @@ int is_palindrome(char *s)
 }
 int length(char *s, int i)
 {
-	if (*(s + i) != '\0')
+	if (*(s + i) == '\0')
 		return (0);
 	return (1 + length(s, i + 1));
 }
 int check(char *s, int index, int l)
 {
+	if (index == l / 2)
+		return (1);
 	if (*(s + index) != *(s + (l - 1 - index)))
 		return (0);
 	else
 		return (1 * check(s, index + 1, l)); 
 
-}	
+}
