@@ -6,6 +6,8 @@
  *
  * Return: int
  */
+int length(char *s, int i)
+int check(char *s, int index, int l);
 int is_palindrome(char *s)
 {
 	return (check(s, 0, length(s, 0));
