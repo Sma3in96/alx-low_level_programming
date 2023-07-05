@@ -2,7 +2,7 @@
 /**
  * _sqrt_recursion - return sqrt
  * @n: int
- * @p: int
+ * @mul: int
  *
  * Return: int
  */
@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 /**
  * look - looking for mul
  * @n: int
- * @p: int
+ * @mul: int
  *
  * Return: mul
  */
