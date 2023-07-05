@@ -12,7 +12,7 @@ int is_prime_number(int n)
 		return (0);
 	if (n == 0 || n == 1)
 		return (0);
-	return (primeloop(n, 2);
+	return (primeloop(n, 2));
 }
 /**
  * primeloop - check for prime
