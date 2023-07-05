@@ -2,6 +2,7 @@
 /**
  * is_prime_number - retrun 1 if prime
  * @n: int
+ * @p: prime
  *
  * Return: 1 or 0
  */
