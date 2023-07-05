@@ -23,6 +23,6 @@ int check(char *s, int index, int l)
 	if (*(s + index) != *(s + (l - 1 - index)))
 		return (0);
 	else
-		return (1 * check(s, index + 1, l); 
+		return (1 * check(s, index + 1, l)); 
 
 }	
