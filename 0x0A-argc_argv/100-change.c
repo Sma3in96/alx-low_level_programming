@@ -10,14 +10,14 @@ int main(int argc, char *argv[])
 {
 	int coins = 0, arg;
 
-	arg = atoi(argv[1]);
-	if (argc != 2 || argc == 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
+		arg = atoi(argv[1]);
 		while (arg > 0)
 		{
 			if (arg >= 25)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 				continue;
 			}
 			if (arg >= 10)
-                        {
+			{
 				coins = coins + arg / 10;
 				arg = arg % 10;
 				continue;
