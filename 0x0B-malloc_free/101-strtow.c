@@ -11,7 +11,7 @@ void free2(char **p, int rows)
 	int h;
 
 	for (h = 0; h < rows; h++)
-		free(p[k]);
+		free(p[h]);
 	free(p);	
 }
 /**
