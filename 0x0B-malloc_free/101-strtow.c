@@ -28,23 +28,28 @@ char **strtow(char *str)
 		return (NULL);
 	j = 0;
 	for (i = 0; i < wcount; i++)
-	while (*(str + j) != '\0')
 	{
-		if (*(str + j) != ' ')
-		{
-			for (n = 0; *(str + j + n) != ' '; n++)
-			p[i] = (char *)malloc(n);
-			if (p[i] == NULL)
-				for (k = 0; k <= i; k++)
-					free(p[i]);
-			for (k = 0 ; k < n; k++)
-				p[i][k] = *(str + j + k);
-			p[i][n] = '\0';
-			j += n;
-			break;
-		}
-		else
+		while (str[j] == ' ')
 			j++;
+		n = 0;
+		while (*(str + j + n) != '\0' && str[j + n] != ' ')
+			n++;
+		p[i] = (char *)malloc((n + 1) * sizeof(char));
+		if (p[i] == NULL)
+		{
+			for (k = 0; k < i; k++)
+				free(p[k]):
+			free(p);
+			return (NULL)
+		}
+		k = 0;	
+		while (k < n)
+		{
+			p[i][k] = str[j + k]:
+			k++;
+		}
+		p[i][n]	= '\0';
+		j += n;
 	}
 	p[wcount] = NULL;
 	return (p);
