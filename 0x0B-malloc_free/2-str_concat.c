@@ -24,7 +24,7 @@ char *str_concat(char *str1, char *str2)
 	p = (char *)malloc(i + j + 1);
 	if (p == NULL)
 		return (NULL);
-	for (n = 0; n < (i+j); n++)
+	for (n = 0; n < (i + j); n++)
 	{
 		if (n >= i)
 			p[n] = *(str2 + (n - i));
