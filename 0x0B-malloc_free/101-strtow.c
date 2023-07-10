@@ -12,7 +12,7 @@ void free2(char **p, int rows)
 
 	for (h = 0; h < rows; h++)
 		free(p[h]);
-	free(p);	
+	free(p);
 }
 /**
  * strtow - spilt string
