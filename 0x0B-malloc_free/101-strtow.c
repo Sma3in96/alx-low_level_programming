@@ -10,8 +10,6 @@ char **strtow(char *str)
 	int j = 0, wcount = 0, flag = 0, i = 0, n = 0, k = 0;
 	char **p;
 
-	if (str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
-		return (NULL);
 	while (*(str + j) != '\0')
 	{
 		if (*(str + j) != ' ' && flag == 0)
@@ -23,6 +21,8 @@ char **strtow(char *str)
 			flag = 0;
 		j++;
 	}
+	if (wcount == 0)
+		return (NULL);
 	p = (char **)malloc((j + wcount + 1) * sizeof( char *));
 	if (p == NULL)
 		return NULL;
