@@ -23,7 +23,7 @@ char **strtow(char *str)
 	}
 	if (wcount == 0)
 		return (NULL);
-	p = (char **)malloc((j + wcount + 1) * sizeof(char *));
+	p = (char **)malloc((wcount + 1) * sizeof(char *));
 	if (p == NULL)
 		return (NULL);
 	j = 0;
