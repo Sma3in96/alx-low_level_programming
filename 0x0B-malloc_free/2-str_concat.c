@@ -8,7 +8,7 @@
  */
 char *str_concat(char *str1, char *str2)
 {
-	int i = 0,j = 0,n = 0;
+	int i = 0, j = 0, n = 0;
 	char *p;
 
 	if (str2 != NULL)
@@ -21,10 +21,10 @@ char *str_concat(char *str1, char *str2)
 		while (*(str1 + i))
 			i++;
 	}
-	p = (char*)malloc(i + j + 1);
+	p = (char *)malloc(i + j + 1);
 	if (p == NULL)
 		return (NULL);
-	for (n = 0;n < (i+j) ; n++)
+	for (n = 0; n < (i+j); n++)
 	{
 		if (n >= i)
 			p[n] = *(str2 + (n - i));
