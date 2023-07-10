@@ -21,7 +21,7 @@ char **strtow(char *str)
 			flag = 0;
 		j++;
 	}
-	p = (char *)malloc((j + wcount + 1) * sizeof( char *));
+	p = (char **)malloc((j + wcount + 1) * sizeof( char *));
 	if (p == NULL)
 		return NULL;
 	j = 0;
