@@ -10,6 +10,8 @@ char **strtow(char *str)
 	int j = 0, wcount = 0, flag = 0, i = 0, n = 0, k = 0;
 	char **p;
 
+	if (*str == NULL || *str == "")
+		return (NULL);
 	while (*(str + j) != '\0')
 	{
 		if (*(str + j) != ' ' && flag == 0)
