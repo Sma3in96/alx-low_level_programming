@@ -51,12 +51,8 @@ char **strtow(char *str)
 		p[i] = (char *)malloc((n + 1) * sizeof(char));
 		if (p[i] == NULL)
 			free2(p, i);
-		k = 0;
-		while (k < n)
-		{
+		for (k = 0; k < n; k++)
 			p[i][k] = str[j + k];
-			k++;
-		}
 		p[i][n]	= '\0';
 		j += n;
 	}
