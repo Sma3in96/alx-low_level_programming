@@ -35,7 +35,7 @@ char **strtow(char *str)
 			n = 0;
 			while (*(str + j + n) != ' ')
 				n++;
-			p[i] = (char *)malloc(n + 1);
+			p[i] = (char *)malloc(n);
 			for (k = 0 ; k < n ; k++)
 				p[i][k] = *(str + j + k);
 			p[i][n] = '\0';
