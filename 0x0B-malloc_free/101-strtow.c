@@ -38,14 +38,14 @@ char **strtow(char *str)
 		if (p[i] == NULL)
 		{
 			for (k = 0; k < i; k++)
-				free(p[k]):
+				free(p[k]);
 			free(p);
-			return (NULL)
+			return (NULL);
 		}
 		k = 0;	
 		while (k < n)
 		{
-			p[i][k] = str[j + k]:
+			p[i][k] = str[j + k];
 			k++;
 		}
 		p[i][n]	= '\0';
