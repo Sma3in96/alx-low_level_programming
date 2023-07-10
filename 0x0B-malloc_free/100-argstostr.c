@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * argstostr - print args
+ * @ac: int
+ * @av: array
+ * Return: pointer
+ */
 char *argstostr(int ac, char **av) {
 	int i, j, n;
 	int total_length = 0, current_index = 0;
@@ -12,11 +18,9 @@ char *argstostr(int ac, char **av) {
 			j++;
 		total_length += j;
 	}
-	p = (char *)malloc((total_length + ac - 1) * sizeof(char));
+	p = (char *)malloc((total_length + ac) * sizeof(char));
 	if (p == NULL) 
-	{
-	return NULL;
-	}
+		return NULL;
 	for (i = 0; i < ac; i++)
 	{
 		n = 0;
@@ -26,10 +30,7 @@ char *argstostr(int ac, char **av) {
 		{
 			p[current_index++] = av[i][j];
 		}
-		if (i != ac - 1)
-		{
-			p[current_index++] = '\n';
-		}
+		p[current_index++] = '\n';
 	}
 	p[current_index] = '\0';
 	return p;
