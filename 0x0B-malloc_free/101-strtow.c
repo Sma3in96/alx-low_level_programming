@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * free2 - free
+ * @p: pointer
+ * @rows: int
+ * Return: vois
+ */
+void free2(char **p, int rows)
+{
+	int h;
+
+	for (h = 0; h < rows; h++)
+		free(p[k]);
+	free(p);	
+}
+/**
  * strtow - spilt string
  * @str: string to split
  * Return: pointer
@@ -10,7 +24,7 @@ char **strtow(char *str)
 	int j = 0, wcount = 0, flag = 0, i = 0, n = 0, k = 0;
 	char **p;
 
-	for (j = 0; *(str + j) != '\0'; j++)
+	while (*(str + j) != '\0')
 	{
 		if (*(str + j) != ' ' && flag == 0)
 		{
@@ -19,6 +33,7 @@ char **strtow(char *str)
 		}
 		if (*(str + j) == ' ')
 			flag = 0;
+		j++;
 	}
 	if (wcount == 0)
 		return (NULL);
@@ -28,18 +43,20 @@ char **strtow(char *str)
 	j = 0;
 	for (i = 0; i < wcount; i++)
 	{
-		for (j = 0; str[j] == ' '; j++);
-		for (n = 0; *(str + j + n) != '\0' && str[j + n] != ' '; n++);
+		while (str[j] == ' ')
+			j++;
+		n = 0;
+		while (*(str + j + n) != '\0' && str[j + n] != ' ')
+			n++;
 		p[i] = (char *)malloc((n + 1) * sizeof(char));
 		if (p[i] == NULL)
+			free2(p, i);
+		k = 0;
+		while (k < n)
 		{
-			for (k = 0; k < i; k++)
-				free(p[k]);
-			free(p);
-			return (NULL);
-		}
-		for (k = 0; k < n; k++)
 			p[i][k] = str[j + k];
+			k++;
+		}
 		p[i][n]	= '\0';
 		j += n;
 	}
