@@ -8,9 +8,12 @@
  */
 int *array_range(int min, int max)
 {
+	int *p;
+	int i;
+
 	if (min > max)
 		return (NULL);
-	p = (int *)malloc((max - min + 1) * sizeof(int));
+	p = malloc((max - min + 1) * sizeof(int));
 	if (p == NULL)
 		return (NULL);
 	p[0] = min;
