@@ -25,13 +25,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	p = (char *)malloc((i + n + 1) * sizeof(char));
 	if (p == NULL)
 		return (NULL);
-	for (k = 0; k <= i + n; k++)
+	for (k = 0; k < i + n; k++)
 	{
 		if (k < i)
 			p[k] = s1[k];
 		if (k >= i)
 			p[k] = s2[k - i];
 	}
-	p[i + n + 1] = '\0';
+	p[k] = '\0';
 	return (p);
 }
