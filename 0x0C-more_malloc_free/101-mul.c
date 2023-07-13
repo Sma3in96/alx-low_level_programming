@@ -14,6 +14,6 @@ int main(int argc, char *argv[])
 		printf("error\n");
 		exit(98);
 	}
-	agrv = agrv + 1;
+	argv = argv + 1;
 	return (0);
 }
