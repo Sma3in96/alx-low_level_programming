@@ -10,9 +10,9 @@
 int main(int argc, char *argv[])
 {
 	int (*p)(int, int);
-	
+
 	if (argc != 4)
-	{	
+	{
 		printf("Error\n");
 		exit(98);
 	}
