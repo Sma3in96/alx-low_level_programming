@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stddef.h>
 /**
  * array_iterator - exe f depends on the parameter
  * @array: array
