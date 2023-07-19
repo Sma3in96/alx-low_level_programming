@@ -16,15 +16,17 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	else
+	if (argv[2][1] != '\0')
 	{
-		p = get_op_func(argv[2]);
-		if (p == NULL)
-		{
-			printf("Error\n");
-			exit(99);
-		}
-		printf("%d\n", p(atoi(argv[1]), atoi(argv[3])));
+		printf("Error\n");
+		exit(99);
 	}
+	p = get_op_func(argv[2]);
+	if (p == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	printf("%d\n", p(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
