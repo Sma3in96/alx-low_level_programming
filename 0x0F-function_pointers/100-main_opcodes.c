@@ -10,14 +10,14 @@
 int main(int argc, char *argv[])
 {
 	char *p = (char *)main;
-	int i, int a;
+	int i, a;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	a = atio(argv[1]);
+	a = atoi(argv[1]);
 	if (a < 0)
 	{
 		printf("Error\n");
@@ -31,5 +31,5 @@ int main(int argc, char *argv[])
 			printf(" ");
 	}
 	printf("\n");
-	return (0)
+	return (0);
 }
