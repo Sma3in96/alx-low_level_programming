@@ -22,22 +22,28 @@ void print_all(const char * const format, ...)
 		while (id[j] != '\0')
 		{
 			if (flag && id[j] == format[i])
-				printf(", "), break;
+			{
+				printf(", ");
+				break;
+			}
 			j++;
 		}
 		switch (format[i])
 		{
 			case 'i':
-				flag = 1, printf("%d", ar_arg(ar, int)), break;
+				flag = 1, printf("%d", va_arg(ar, int));
+				break;
 			case 'f':
-				flag = 1, printf("%f", ar_arg(ar, double)), break;
+				flag = 1, printf("%f", va_arg(ar, double));
+				break;
 			case 'c':
-				flag = 1, printf("%c", ar_arg(ar, char)), break;
+				flag = 1, printf("%c", va_arg(ar, int));
+				break;
 			case 's':
 			{
 				flag = 1;
-				str = ar_arg(ar, char*);
-				if (str = NULL)
+				str = va_arg(ar, char*);
+				if (str == NULL)
 					printf("(nil)");
 				else
 					printf("%s", str);
