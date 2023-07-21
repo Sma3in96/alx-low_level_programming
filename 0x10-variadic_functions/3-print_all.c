@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	char id[4] = "fics";
 
 	va_start(ar, format);
-	while (format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (id[j] != '\0')
