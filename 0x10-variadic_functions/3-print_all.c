@@ -19,6 +19,7 @@ void print_all(const char * const format, ...)
 	va_start(ar, format);
 	while (format[i] != '\0')
 	{
+		j = 0;
 		while (id[j] != '\0')
 		{
 			if (flag && id[j] == format[i])
@@ -44,10 +45,11 @@ void print_all(const char * const format, ...)
 				flag = 1;
 				str = va_arg(ar, char*);
 				if (str == NULL)
+				{
 					printf("(nil)");
-				else
-					printf("%s", str);
-				
+					break;
+				}
+				printf("%s", str);
 				break;
 			}
 		}
