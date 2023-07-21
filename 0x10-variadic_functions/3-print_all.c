@@ -1,7 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * print_all - print all
  * @format: str
@@ -12,8 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ar;
 	char *str;
-	unsigned int i = 0, j = 0;
-	int flag = 0;
+	unsigned int i = 0, j = 0, flag = 0;
 	char id[4] = "fics";
 
 	va_start(ar, format);
@@ -26,8 +22,7 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}
-			j++;
+			} j++;
 		}
 		switch (format[i])
 		{
@@ -41,9 +36,7 @@ void print_all(const char * const format, ...)
 				flag = 1, printf("%c", va_arg(ar, int));
 				break;
 			case 's':
-			{
-				flag = 1;
-				str = va_arg(ar, char*);
+				flag = 1, str = va_arg(ar, char*);
 				if (str == NULL)
 				{
 					printf("(nil)");
@@ -51,10 +44,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", str);
 				break;
-			}
-		}
-		i++;
+		} i++;
 	}
-	printf("\n");
-	va_end(ar);
+	printf("\n"), va_end(ar);
 }
