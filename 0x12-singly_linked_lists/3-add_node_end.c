@@ -23,7 +23,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	nnode->next = NULL;
 	find = *head;
 	if (find ==  NULL)
-		*head = new;
+		*head = nnode;
 	else
 	{
 		while (find->next != NULL)
