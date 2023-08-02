@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * add_nodeint_end - add to the end
  * @h: list
