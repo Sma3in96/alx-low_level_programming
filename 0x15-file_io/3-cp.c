@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		rfile_from = read(file_from, buffer, 1024);
 		if (rfile_from == -1)
 			handleerror(-1, 0, argv);
-		wfile_to = dprintf(file_to, "%s", buffer);
+		wfile_to = write(file_to, buffer, rfile_from);
 		if (wfile_to == -1)
 			handleerror(0, -1, argv);
 	}
