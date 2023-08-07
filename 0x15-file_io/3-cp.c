@@ -4,6 +4,7 @@
  * handleerror - handle
  * @file_to: fd1
  * @file_from: fd2
+ * @argv: array
  * Return: void
  */
 void handleerror(int file_to, int file_from, char *argv[])
