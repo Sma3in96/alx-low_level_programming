@@ -47,10 +47,10 @@ int main(int argc, char *argv[])
 	while (rfile_from)
 	{
 		rfile_from = read(file_from, buffer, 1024);
-		if (rflie == -1)
+		if (rfile_from == -1)
 			handleerror(-1, 0, argv);
 		wfile_to = dprintf(file_to, "%s", buffer);
-		if (wfile == -1)
+		if (wfile_to == -1)
 			handleerror(0, -1, argv);
 	}
 	file_close = close(file_from);
